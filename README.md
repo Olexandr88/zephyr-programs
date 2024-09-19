@@ -1,4 +1,4 @@
-# zephyr-programs
+# zephyr-programs.
 
 ## Setup
 ### Setup Environment
