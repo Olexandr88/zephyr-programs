@@ -12,6 +12,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.0",
+    "mercury-sdk": "0.2.6",
     "soroswap-router-sdk": "1.2.6",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.2"

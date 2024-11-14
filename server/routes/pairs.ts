@@ -10,12 +10,13 @@ router.get('/', (req: Request, res: Response) => {
 
     let protocol = queryParams?.protocol as string;
     protocol = protocol?.toUpperCase() as ProtocolType;
+    console.log("🚀 ~ router.get ~ protocol:", protocol)
 
-    if (protocol === 'SOROSWAP') {
+    if (protocol == 'SOROSWAP') {
         return handlePoolRequest(req, res, getMercuryPools);
-    } else if (protocol === 'PHOENIX') {
+    } else if (protocol == 'PHOENIX') {
         return handlePoolRequest(req, res, getMercuryPhoenixPools);
-    } else if (protocol === 'AQUA') {
+    } else if (protocol == 'AQUA') {
         return handlePoolRequest(req, res, getMercuryAquaPools);
     } else {
         return res.status(400).json({ error: 'Invalid protocol' });
